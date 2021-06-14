@@ -1,4 +1,4 @@
-name: React CI
+name: React CI/CD
 
 on:
   push: 
@@ -19,6 +19,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: instalar dependencias
       run: npm install
+      
 
     - name: Build
       run: npm run build 
+
+      run: echo Build Finalizado
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    run: echo Deploy Finalizado
