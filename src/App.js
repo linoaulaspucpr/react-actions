@@ -4,9 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
-          Aprenda React com segurança
-        
+     ssss
     </div>
   );
 }
