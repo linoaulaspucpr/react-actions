@@ -14,8 +14,8 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        
-          Aprenda React 2
+        >
+          Aprenda React com segurança
         </a>
       </header>
     </div>
