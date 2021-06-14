@@ -1,5 +1,4 @@
 name: React CI/CD
-
 on:
   push: 
     branches:
@@ -20,4 +19,11 @@ jobs:
     - name: instalar dependencias
       run: npm install
     - name: Build
-      run: npm run build 
+      run: npm run build
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Executar Deploy
+      run: echo Finalizado
